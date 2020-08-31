@@ -1,0 +1,11 @@
+Prices: <textarea id="pricesString" style="width: 400px; height: 200px;" [(ngModel)]="pricesString"></textarea>
+<div>
+  Range: <input id="rangeMin" [(value)]="rangeMin" />-<input id="rangeMax" [(value)]="rangeMax" />
+</div>
+<div>
+  <button (click)="onGetSum()">test</button>
+</div>
+
+<div *ngFor="let talk of prices">
+  {{ talk }}
+</div>
